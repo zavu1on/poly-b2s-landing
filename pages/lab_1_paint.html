@@ -3,10 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/pic.css">
   <title>Лабораторная работа №1. Рисунок CSS</title>
 </head>
 <body>
+  <header class="header">
+    <a class="header__logo" href="../index.html" aria-label="Branch to Start - на главную">B2S</a>
+
+    <input type="checkbox" class="header__burger-toggle" id="burger-toggle">
+    <label class="header__burger" for="burger-toggle">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="../index.html">На главную</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="../index.html#labs">К лабораторным</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="lab-main">
+  <div class="lab-content">
   <div class="pic">
 
     <div class="pic__branch-container">
@@ -53,6 +72,17 @@
   <div class="source-container">
     <img src="../assets/pain.png" alt="динозавр">
   </div>
-  <a class="back-link" href="../index.html">назад</a>
+  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="footer__logo">B2S</span>
+      <p class="footer__text">Branch to Start - учебный проект, СПбПУ</p>
+    </div>
+    <div class="footer__contacts">
+      <a href="../index.html">На главную</a>
+    </div>
+  </footer>
 </body>
 </html>

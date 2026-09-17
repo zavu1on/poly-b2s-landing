@@ -4,33 +4,360 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
-  <title>Branch to start | Сервис адаптивного онбординга линейного персонала</title>
+  <title>Branch to Start | Адаптивный онбординг и база знаний для МСБ</title>
 </head>
 <body>
   <header class="header">
-    <p class="header__logo">B2S</p>
+    <a class="header__logo" href="index.html" aria-label="Branch to Start - на главную">B2S</a>
+
+    <input type="checkbox" class="header__burger-toggle" id="burger-toggle">
+    <label class="header__burger" for="burger-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     <nav class="header__nav">
       <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="#problem">Проблема</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#product">Продукт</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#competitors">Конкуренты</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#market">Рынок</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#pricing">Тарифы</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#team">Команда</a></li>
         <li class="header__nav-item"><a class="header__nav-link" href="#labs">Лабораторные</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">О проекте</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
+
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Стартап-проект · грант СтС-626416</p>
+        <h1 class="hero__title">Branch to Start</h1>
+        <p class="hero__lead">
+          Веб-платформа для малого и среднего бизнеса, которая превращает онбординг линейного
+          персонала из устных инструктажей и разрозненных PDF в управляемый интерактивный граф
+          с проверкой soft-skills через видео-кейсы - и продолжается корпоративной базой знаний.
+        </p>
+        <a class="hero__cta" href="#product">Как это работает</a>
+      </div>
+      <div class="hero__mark">
+        <img class="hero__logo-mark" src="assets/logo.png" alt="Графический знак Branch to Start">
+      </div>
+    </section>
+
+    <section class="problem" id="problem">
+      <h2 class="section__title">Почему онбординг линейного персонала не работает</h2>
+      <div class="problem__grid">
+        <div class="problem__col problem__col--now">
+          <h3 class="problem__col-title">Как чаще всего происходит сейчас</h3>
+          <ul class="problem__list">
+            <li>Обучение держится на конкретном наставнике - качество нестабильно от смены к смене.</li>
+            <li>Опытные сотрудники заново проходят то, что уже умеют, теряя время и мотивацию.</li>
+            <li>Классический тест с вариантами ответа легко пройти списыванием - soft-skills не проверить.</li>
+            <li>После онбординга база знаний - это папка на общем диске: коллеги отвечают на одни и те же вопросы.</li>
+          </ul>
+        </div>
+        <figure class="problem__figure">
+          <img src="assets/line-staff.png" alt="Линейный персонал розничной торговли и услуг - основная целевая аудитория Branch to Start">
+          <figcaption>
+            По данным Antal Talent (2024), текучесть в российском ритейле достигает 45%, а в
+            отельно-ресторанном бизнесе - 55%; около 28% сотрудников уходят именно в первые
+            шесть месяцев работы (СберПодбор, 2023).
+          </figcaption>
+        </figure>
+        <div class="problem__col problem__col--after">
+          <h3 class="problem__col-title">Как решает Branch to Start</h3>
+          <ul class="problem__list">
+            <li>Курс - однонаправленный граф: обязательные и опциональные ветви, слияние тем, аттестация вместо повторного прохождения.</li>
+            <li>Видео-ответы на ситуационные кейсы записываются прямо в браузере - оценивается реальный навык, а не выученный текст.</li>
+            <li>После онбординга сотруднику открывается mind-map базы знаний той же компании - быстрый поиск вместо вопросов коллегам.</li>
+            <li>Менеджер видит прозрачную статистику: время на карточке, попытки списывания, результаты тестов и видео.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="product" id="product">
+      <h2 class="section__title">Два модуля - один процесс адаптации</h2>
+
+      <div class="product__grid">
+        <article class="product__module product__module--half">
+          <div class="product__media">
+            <img src="assets/diagram1.png" alt="Схема прохождения учебного материала: последовательные блоки и итоговый тест с ветвлением по результату">
+          </div>
+          <div class="product__text">
+            <h3 class="product__module-title">1. Конструктор адаптивного онбординга</h3>
+            <p>
+              Курс хранится как граф: родительские карточки открыты сразу, дочерние - после
+              прохождения предков. Несколько тем могут сливаться в одну, часть веток можно
+              пропустить через аттестацию, а при провале промежуточного теста - назначить
+              повторное прохождение ветви. Сотрудник видит всю структуру курса и выбирает
+              порядок изучения равнозначных тем самостоятельно.
+            </p>
+          </div>
+        </article>
+
+        <article class="product__module product__module--half">
+          <div class="product__media">
+            <img src="assets/video-case.png" alt="Иллюстрация записи видео-ответа на ситуационный кейс прямо в браузере">
+          </div>
+          <div class="product__text">
+            <h3 class="product__module-title">2. Видео-кейсы вместо классических тестов</h3>
+            <p>
+              Для проверки soft-skills сотрудник получает ролевое задание - холодный звонок,
+              новая продажа, реакция на критику - и записывает ответ через MediaRecorder API,
+              без возможности прикрепить готовое видео. Руководитель оценивает запись по заданным
+              критериям. Ни один из рассмотренных конкурентов такого инструмента не предлагает.
+            </p>
+          </div>
+        </article>
+
+        <article class="product__module product__module--full">
+          <div class="product__media">
+            <img src="assets/mind-map.png" alt="Пример визуализации базы знаний в формате интеллект-карты">
+          </div>
+          <div class="product__text">
+            <h3 class="product__module-title">3. Корпоративная база знаний (mind-map)</h3>
+            <p>
+              После успешного завершения онбординга сотруднику автоматически открывается
+              структурированная база знаний компании - регламенты, инструкции, лучшие практики -
+              в том же графовом стиле, что и курс. Это решает задачу «продолжительного онбординга»:
+              первые полгода новичок регулярно возвращается к материалам и проверяет себя сам.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tech" id="tech">
+      <h2 class="section__title">Технологическая основа</h2>
+      <ul class="tech__list">
+        <li class="tech__item">
+          <p class="tech__item-title">Граф вместо линейного курса</p>
+          <p class="tech__item-text">Курс хранится как ориентированный граф, рендерится библиотекой ReactFlow даже для многоуровневых программ обучения.</p>
+        </li>
+        <li class="tech__item">
+          <p class="tech__item-title">Mobile-first, а не адаптация десктопа</p>
+          <p class="tech__item-text">91% линейных сотрудников хотят учиться с телефона (Lighthouse Research & Advisors, 2024) - интерфейс проектируется сначала под смартфон.</p>
+        </li>
+        <li class="tech__item">
+          <p class="tech__item-title">Гибкая система ролей (RBAC)</p>
+          <p class="tech__item-text">Разграничение прав менеджеров курсов и проверяющих закладывается на старте - платформа масштабируется от небольшой франшизы до сети с сотнями сотрудников.</p>
+        </li>
+        <li class="tech__item">
+          <p class="tech__item-title">NestJS + GraphQL + PostgreSQL + Next.js</p>
+          <p class="tech__item-text">SSR снижает нагрузку на клиентские устройства, GraphQL сокращает объём передаваемых данных, JSONB в PostgreSQL хранит гибкие настройки карточек курса.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="competitors" id="competitors">
+      <h2 class="section__title">Branch to Start на фоне рынка</h2>
+      <p class="competitors__intro">
+        Прямые конкуренты закрывают либо только онбординг, либо превращаются в тяжёлую
+        HR-экосистему с десятками лишних для малого бизнеса модулей. Мы сравнили пять
+        решений по цене и ключевым возможностям:
+      </p>
+
+      <div class="competitors__logos">
+        <img src="assets/ispring.png" alt="Логотип iSpring Learn">
+        <img src="assets/skill-cup.png" alt="Логотип Skill Cup">
+        <img src="assets/kampus.png" alt="Логотип Kampus">
+      </div>
+
+      <div class="table-wrap">
+        <table class="compare-table">
+          <caption>Сравнение стоимости и возможностей (руб./сотрудника в месяц)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Платформа</th>
+              <th scope="col">Цена / сотрудника</th>
+              <th scope="col">Mobile-first</th>
+              <th scope="col">Видео-кейсы</th>
+              <th scope="col">База знаний</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="compare-table__row--highlight">
+              <th scope="row">Branch to Start</th>
+              <td>100–120 &#8381;</td>
+              <td>Да</td>
+              <td>Да</td>
+              <td>Да, mind-map</td>
+            </tr>
+            <tr>
+              <th scope="row">iSpring Learn</th>
+              <td>~250 &#8381;</td>
+              <td>Ограничено</td>
+              <td>Нет</td>
+              <td>Нет</td>
+            </tr>
+            <tr>
+              <th scope="row">Skill Cup</th>
+              <td>~190 &#8381;</td>
+              <td>Да</td>
+              <td>Нет</td>
+              <td>Нет</td>
+            </tr>
+            <tr>
+              <th scope="row">Kampus LXP</th>
+              <td>~150 &#8381;</td>
+              <td>Да</td>
+              <td>Нет</td>
+              <td>Как один из 50+ модулей</td>
+            </tr>
+            <tr>
+              <th scope="row">Teachbase</th>
+              <td>~241 &#8381;</td>
+              <td>Нестабильно</td>
+              <td>Нет</td>
+              <td>Нет</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. РЫНОК -->
+    <section class="market" id="market">
+      <h2 class="section__title">Оценка рынка</h2>
+      <p>
+        Целевой сегмент - компании розничной торговли, услуг, гостиничного и ресторанного
+        бизнеса с частым наймом линейного персонала. Оценка по данным СПАРК-Интерфакс и ФНС
+        России (2025):
+      </p>
+      <div class="market__grid">
+        <div class="market__stat">
+          <p class="market__stat-value">1 769 000</p>
+          <p class="market__stat-label">PAM - юрлиц в 7 целевых отраслях</p>
+          <p class="market__stat-share">100% рынка PAM</p>
+        </div>
+        <div class="market__stat">
+          <p class="market__stat-value">590 000</p>
+          <p class="market__stat-label">TAM - компаний с линейным персоналом</p>
+          <p class="market__stat-share">33% от PAM</p>
+        </div>
+        <div class="market__stat">
+          <p class="market__stat-value">15 000</p>
+          <p class="market__stat-label">SAM - готовы к цифровому онбордингу</p>
+          <p class="market__stat-share">0,8% от PAM · 2,5% от TAM</p>
+        </div>
+        <div class="market__stat market__stat--accent">
+          <p class="market__stat-value">750</p>
+          <p class="market__stat-label">SOM - 5% от SAM, горизонт 3-5 лет</p>
+          <p class="market__stat-share">0,04% от PAM</p>
+        </div>
+      </div>
+      <p class="market__note">
+        Барьеры рынка: невысокая цифровая грамотность части заказчиков, консерватизм привычных
+        процессов и требования к защите персональных данных (ФЗ-152).
+      </p>
+    </section>
+
+    <!-- 7. ТАРИФЫ -->
+    <section class="pricing" id="pricing">
+      <h2 class="section__title">Тарифы</h2>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <caption>Тарифные планы Branch to Start</caption>
+          <thead>
+            <tr>
+              <th scope="col">Тариф</th>
+              <th scope="col">Стоимость</th>
+              <th scope="col">Лимит обучаемых</th>
+              <th scope="col">Аналитика</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">X</th>
+              <td>7 000 &#8381;/мес</td>
+              <td>до 50</td>
+              <td>Базовая</td>
+            </tr>
+            <tr class="compare-table__row--highlight">
+              <th scope="row">Y</th>
+              <td>18 000 &#8381;/мес</td>
+              <td>до 150</td>
+              <td>Расширенная</td>
+            </tr>
+            <tr>
+              <th scope="row">Z</th>
+              <td>40 000 &#8381;/мес</td>
+              <td>до 350</td>
+              <td>Полная + экспорт</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pricing__note">
+        Бесплатный пробный период - 14 дней с полным функционалом. Средневзвешенная стоимость
+        пользователя - 131 &#8381;/мес, что на 20–57% дешевле рассмотренных конкурентов.
+      </p>
+    </section>
+
+    <section class="team" id="team">
+      <h2 class="section__title">Команда проекта</h2>
+      <ul class="team__list">
+        <li class="team__member">
+          <span class="team__avatar">МА</span>
+          <div class="team__info">
+            <p class="team__name">Михаил Алексеев</p>
+            <p class="team__role">Руководитель проекта / Fullstack-разработчик</p>
+            <p class="team__bio">Архитектура платформы, backend и frontend, нагрузочное тестирование. 2 года коммерческой разработки LMS и корпоративной базы знаний.</p>
+          </div>
+        </li>
+        <li class="team__member">
+          <span class="team__avatar">КС</span>
+          <div class="team__info">
+            <p class="team__name">Кирилл Строк</p>
+            <p class="team__role">Product Manager / Бизнес-аналитик</p>
+            <p class="team__bio">Анализ рынка и конкурентов, go-to-market стратегия, коммерческие материалы и коммуникация с клиентами.</p>
+          </div>
+        </li>
+        <li class="team__member">
+          <span class="team__avatar">АК</span>
+          <div class="team__info">
+            <p class="team__name">Алина Куготова</p>
+            <p class="team__role">Дизайнер</p>
+            <p class="team__bio">Дизайн-система проекта, кликабельные прототипы, визуальное оформление ключевых экранов платформы.</p>
+          </div>
+        </li>
+        <li class="team__member">
+          <span class="team__avatar">АС</span>
+          <div class="team__info">
+            <p class="team__name">Алина Середа</p>
+            <p class="team__role">Финансовый аналитик</p>
+            <p class="team__bio">Unit-экономика, тарифная сетка, финансовое обоснование и контроль бюджета проекта.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 9. ЛАБОРАТОРНЫЕ -->
     <section class="labs" id="labs">
-      <h1 class="labs__title">Лабораторные работы</h1>
+      <h2 class="section__title">Лабораторные работы курса</h2>
       <ul class="labs__list">
         <li class="labs__item">
           <a class="labs__link" href="pages/lab_1_paint.html">Лабораторная работа №1. Рисунок CSS</a>
         </li>
       </ul>
     </section>
+
   </main>
 
   <footer class="footer">
-    <p class="footer__text">Branch to start — учебный проект, СПбПУ</p>
+    <div class="footer__brand">
+      <span class="footer__logo">B2S</span>
+      <p class="footer__text">Branch to Start - учебный проект, СПбПУ</p>
+    </div>
+    <div class="footer__contacts">
+      <a href="mailto:joinmma@mail.ru">joinmma@mail.ru</a>
+      <a href="tel:+79114613555">+7 911 461-35-55</a>
+    </div>
   </footer>
 </body>
 </html>
