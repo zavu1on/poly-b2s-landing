@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/pic.css">
+  <link rel="stylesheet" href="../styles/flex_anim.css">
+  <title>Лабораторная работа №2. Flexbox-ролик</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo" href="../index.html" aria-label="Branch to Start - на главную">B2S</a>
+
+    <input type="checkbox" class="header__burger-toggle" id="burger-toggle">
+    <label class="header__burger" for="burger-toggle">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="../index.html">На главную</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="../index.html#labs">К лабораторным</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="lab-main">
+    <div class="lab-content">
+
+      <div class="flex-card">
+        <div class="flex-card__prince">
+          <img class="flex-card__prince-img" src="../assets/var3/prince2.png" alt="Принц">
+        </div>
+
+        <div class="flex-card_frog">
+          <img class="flex-card__frog-img" src="../assets/var3/frog1.png" alt="Лягушка">
+          <img class="flex-card__princess-img" src="../assets/var3/princess.png" alt="Принцесса">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="footer__logo">B2S</span>
+      <p class="footer__text">Branch to Start - учебный проект, СПбПУ</p>
+    </div>
+    <div class="footer__contacts">
+      <a href="../index.html">На главную</a>
+    </div>
+  </footer>
+</body>
+</html>
