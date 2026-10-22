@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/dom_test.css">
+  <title>Лабораторная работа №3. DOM-тест</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo" href="../index.html" aria-label="Branch to Start - на главную">B2S</a>
+
+    <input type="checkbox" class="header__burger-toggle" id="burger-toggle">
+    <label class="header__burger" for="burger-toggle">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="../index.html">На главную</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="../index.html#labs">К лабораторным</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="test">
+    <h1 class="test__title">Вопрос</h1>
+
+    <section class="test__end" hidden>
+      <p class="test__end-text">Вопросы закончились</p>
+      <p class="test__result"></p>
+    </section>
+
+    <ul class="test__list"></ul>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="footer__logo">B2S</span>
+      <p class="footer__text">Branch to Start - учебный проект, СПбПУ</p>
+    </div>
+    <div class="footer__contacts">
+      <a href="../index.html">На главную</a>
+    </div>
+  </footer>
+
+  <script src="../scripts/dom_test.js"></script>
+</body>
+</html>
