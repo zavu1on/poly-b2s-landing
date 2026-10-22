@@ -26,11 +26,10 @@
   text-align: left;
 }
 
-.test__list {
-  max-width: 900px;
-}
-
 .question {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
   margin-bottom: 24px;
 }
 
@@ -38,10 +37,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 12px 24px;
+  gap: 16px;
+  width: 240px;
+  flex-shrink: 0;
+  padding: 12px 16px;
   background-color: #f5eed9;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .test__list--done .question__head {
@@ -88,17 +89,18 @@
 
 .question__answers {
   display: flex;
+  flex: 1;
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 40px;
-  margin-top: 24px;
+  gap: 24px;
   padding-bottom: 80px;
 }
 
 .answer {
-  width: 240px;
+  width: 200px;
   padding: 16px;
   background-color: #f5eed9;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s, translate 0.6s ease-in, opacity 0.6s;
@@ -132,7 +134,6 @@
 
 .question__solution {
   width: auto;
-  margin-top: 16px;
   cursor: default;
 }
 
@@ -181,13 +182,19 @@
     font-size: 20px;
   }
 
+  .question {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
   .question__head {
+    width: auto;
     padding: 10px 14px;
     font-size: 18px;
   }
 
   .question__answers {
-    flex-wrap: wrap;
     gap: 16px;
     padding-bottom: 40px;
   }
